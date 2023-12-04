@@ -1,0 +1,56 @@
+footer {
+	background-color: #34516c;
+	width: 100%;
+	color: white;
+	bottom: 0;
+	display: flex;
+	position: static;
+	justify-content: space-between;
+	padding: 45px 2%;
+	margin-top: auto;
+}
+
+footer p {
+	font-size: 1.5rem;
+}
+footer .left p,
+.middle p {
+	padding-bottom: 15px;
+}
+footer a {
+	font-size: 1.5rem;
+}
+
+footer h2 {
+	font-size: 2.5rem;
+	margin-bottom: 15px;
+}
+.middle {
+	margin-bottom: 15px;
+}
+.left {
+	margin-bottom: 15px;
+}
+.right {
+	margin-right: 15%;
+}
+
+
+@media only screen and (max-width: 768px) {
+  footer p,
+	footer a {
+		font-size: 1.2rem;
+	}
+	footer h2 {
+		font-size: 1.8rem;
+	}
+}
+@media only screen and (max-width: 500px) {
+	footer p,
+	footer a {
+		font-size: 1rem;
+	}
+	footer .right {
+		margin-right: 5%;
+	}
+}
