@@ -20,3 +20,36 @@ main .videoPart h1 {
 	width: 70%;
 	background: #000;
 }
+.frontText h1 {
+	color: #34516c;
+	font-weight: 650;
+	width: 100%;
+	font-size: 3.3rem;
+	margin-bottom: 10px;
+}
+.frontText p {
+	font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1192px) {
+	.frontText h1 {
+		font-size: 5rem;
+	}
+	.frontText p {
+		font-size: 1.6rem;
+	}
+	.frontText .videoPart h1 {
+		font-size: 3rem;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.frontText h1 {
+		font-size: 3.3rem;
+	}
+	.frontText p {
+		font-size: 1.4rem;
+	}
+	.frontText .videoPart h1 {
+		font-size: 2.2rem;
+	}
+}
