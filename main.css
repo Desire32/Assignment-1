@@ -1,0 +1,22 @@
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 3% auto;
+	flex-direction: column;
+	width: 100%;
+	box-sizing: border-box;
+}
+main .videoPart h1 {
+	font-size: 2.2rem;
+	color: yellow;
+	margin: 15px 0 15px 0;
+}
+.videoPart video {
+	width: 70%;
+	background: #000;
+}
+.videoPart iframe {
+	width: 70%;
+	background: #000;
+}
