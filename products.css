@@ -1,8 +1,8 @@
 
 .item img {
-	width: auto;
+	width: 100%;
   height: auto;
-  max-height: 200px;
+	max-height: 330px;
 }
 .item h2 {
 	color: yellow;
@@ -15,6 +15,8 @@
 	text-align: center;
 	display: flex;
 	flex-wrap: wrap;
+	width: 50%;
+	margin: auto;
 }
 .item .price {
 	font-weight: 900;
@@ -28,11 +30,13 @@
 	text-align: left;
 }
 .item {
-	box-sizing: border-box;
-	border: solid black 1px;
-	margin: 30px auto;
-	flex: 0 0 calc(33.33% - 20px);
-
+	box-sizing: border-box; /* ?? */
+	border: solid rgb(206, 187, 187) 1px;
+	margin: 20px auto;
+	flex: 0 0 calc(33.33% - 30px);
+	background-color: rgb(254, 248, 248);
+	min-width: 250px;
+	
 }
 .item .button {
 	margin-bottom: 15px;
@@ -40,3 +44,4 @@
 	font-size: 1.3rem;
 	font-weight: 700;
 }
+
