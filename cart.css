@@ -1,0 +1,33 @@
+.itemCart img {
+	width: auto;
+  max-width: 150px;
+	height: auto;
+}
+.itemCart h3 {
+	font-size: 1.5rem;
+}
+.itemCart .price {
+	font-size: 1.4rem;
+}
+.container {
+	align-items: center;
+	text-align: center;
+  width: auto;
+  margin: 2% auto;
+  padding-bottom: 15%;
+}
+main h1{
+  font-size: 2.5rem;
+color: gold;
+}
+main .text{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 1%;
+  
+}
+main{
+  text-align: center;
+  width: auto;
+  margin-top: 3%;
+}
