@@ -33,7 +33,6 @@ UCLan Hoodie,Bright Pink,cotton authentic character and practicality are combine
 UCLan Hoodie,Burgundy New,cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks, £  39.99,images/items/hoodies/hoodie (32).jpg,,,,,"['UCLan Hoodie','Burgundy New','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' £  39.99','images/items/hoodies/hoodie (32).jpg']"
 UCLan Hoodie,Navy New,cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks, £  39.99,images/items/hoodies/hoodie (33).jpg,,,,,"['UCLan Hoodie','Navy New','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' £  39.99','images/items/hoodies/hoodie (33).jpg']"
 UCLan Hoodie,Bright Green,cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks, £  39.99,images/items/hoodies/hoodie (34).jpg,,,,,"['UCLan Hoodie','Bright Green','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' £  39.99','images/items/hoodies/hoodie (34).jpg']"
-,,,,,,,,,"['','','','','']"
 UCLan Logo Jumper,Purple,cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks, £  29.99,images/items/jumpers/jumper (1).jpg,,,,,"['UCLan Logo Jumper','Purple','cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks',' £  29.99','images/items/jumpers/jumper (1).jpg']"
 UCLan Logo Jumper,Rusty Red,cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks, £  29.99,images/items/jumpers/jumper (2).jpg,,,,,"['UCLan Logo Jumper','Rusty Red','cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks',' £  29.99','images/items/jumpers/jumper (2).jpg']"
 UCLan Logo Jumper,Water Blue,cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks, £  29.99,images/items/jumpers/jumper (3).jpg,,,,,"['UCLan Logo Jumper','Water Blue','cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks',' £  29.99','images/items/jumpers/jumper (3).jpg']"
@@ -73,8 +72,7 @@ UCLan Logo Jumper,Vibrant Red,cotton authentic character and practicality are co
 UCLan Logo Jumper,Ocean Blue,cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks, £  29.99,images/items/jumpers/jumper (37).jpg,,,,,"['UCLan Logo Jumper','Ocean Blue','cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks',' £  29.99','images/items/jumpers/jumper (37).jpg']"
 UCLan Logo Jumper,Creame,cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks, £  29.99,images/items/jumpers/jumper (38).jpg,,,,,"['UCLan Logo Jumper','Creame','cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks',' £  29.99','images/items/jumpers/jumper (38).jpg']"
 UCLan Logo Jumper,Lighter Blue,cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks, £  29.99,images/items/jumpers/jumper (39).jpg,,,,,"['UCLan Logo Jumper','Lighter Blue','cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks',' £  29.99','images/items/jumpers/jumper (39).jpg']"
-UCLan Logo Jumper,Light Grey,cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks, £  29.99,images/items/jumpers/jumper (40).jpg,,,,,"['UCLan Logo Jumper','Light Grey','cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks',' £  29.99','images/items/jumpers/jumper (40).jpg']"
-,,,,,,,,,"['','','','','']"
+UCLan Logo Jumper,Light Grey,cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks, £  29.99,images/items/jumpers/jumper (40).jpg,,,,,"['UCLan Logo Jumper','Light Grey','cotton authentic character and practicality are combined in this winter jumper for students that goes with everything to create casual looks',' £  29.99','images/items/jumpers/jumper (40).jpg']" 
 UCLan Logo Tshirt,Navy Blue New,cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days, £  19.99,images/items/tshirts/tshirt (1).jpg,,,,,"['UCLan Logo Tshirt','Navy Blue New','cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days',' £  19.99','images/items/tshirts/tshirt (1).jpg']"
 UCLan Logo Tshirt,Rusty Red New,cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days, £  19.99,images/items/tshirts/tshirt (2).jpg,,,,,"['UCLan Logo Tshirt','Rusty Red New','cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days',' £  19.99','images/items/tshirts/tshirt (2).jpg']"
 UCLan Logo Tshirt,Burgundy,cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days, £  19.99,images/items/tshirts/tshirt (3).jpg,,,,,"['UCLan Logo Tshirt','Burgundy','cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days',' £  19.99','images/items/tshirts/tshirt (3).jpg']"
@@ -112,6 +110,13 @@ UCLan Logo Tshirt,Teal Blue,cotton authentic character and practicality are comb
 UCLan Logo Tshirt,White,cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days, £  19.99,images/items/tshirts/tshirt (35).jpg,,,,,"['UCLan Logo Tshirt','White','cotton authentic character and practicality are combined in this summery t-shirt for students that goes with everything to create casual looks. Perfect for those summer days',' £  19.99','images/items/tshirts/tshirt (35).jpg']"
 `
 
+function addToCart(product) {
+	let cart = JSON.parse(localStorage.getItem('cart')) || [];
+	cart.push(product);
+	localStorage.setItem('cart', JSON.stringify(cart));
+	alert('Product added to cart');
+}
+
 // dividing text into paragraphs for sorting
 const divideParagraphs = text.split('\n')
 
@@ -146,6 +151,11 @@ divideParagraphs.forEach(paragraph => {
 		buy.classList.add('button')
 		buy.textContent = 'Buy'
 
+		buy.addEventListener('click', function() {
+			addToCart(jsonData);
+			});
+
+
 		prItem.appendChild(prImage)
 		prItem.appendChild(prName)
 		prItem.appendChild(prDescription)
@@ -153,4 +163,12 @@ divideParagraphs.forEach(paragraph => {
 		prItem.appendChild(buy)
 		prContainer.appendChild(prItem)
 	}
+
 })
+
+
+
+
+
+
+
