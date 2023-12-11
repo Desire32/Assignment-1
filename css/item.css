@@ -1,0 +1,43 @@
+.itemDetails{
+  width: 45%;
+}
+.itemDetails h2{
+  color: yellow;
+	font-weight: 700;
+	font-size: 3rem;
+	text-align: left;
+	margin-left: 10px;
+}
+main{
+	width: auto;
+	margin: 2% 3%;
+}
+.itemDetails .price{
+  font-weight: 900;
+	font-size: 1.2rem;
+	padding: 10px;
+	text-align: left;
+}
+
+.itemDetails .description{
+  padding: 10px;
+	font-size: 1.5rem;
+	text-align: left;
+}
+.itemDetails img{
+  width: 100%;
+  height: auto;
+}
+#productDetails{
+	border: solid rgb(206, 187, 187) 1px;
+	margin: 20px auto;
+	flex: 0 0 calc(33.33% - 30px);
+	background-color: rgb(254, 248, 248);
+	min-width: 250px;
+}
+.itemDetails .button{
+  margin-bottom: 15px;
+	padding: 4px 8px;
+	font-size: 1.3rem;
+	font-weight: 700;
+}
