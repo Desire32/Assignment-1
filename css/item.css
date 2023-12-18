@@ -1,5 +1,9 @@
+/* item.css, which used for item.html page */
+
 .itemDetails{
   width: 45%;
+  text-align: center;
+  margin: auto;
 }
 .itemDetails h2{
   color: yellow;
@@ -13,12 +17,11 @@ main{
 	margin: 2% 3%;
 }
 .itemDetails .price{
-  font-weight: 900;
+  font-weight: 800;
 	font-size: 1.2rem;
 	padding: 10px;
 	text-align: left;
 }
-
 .itemDetails .description{
   padding: 10px;
 	font-size: 1.5rem;
@@ -30,7 +33,7 @@ main{
 }
 #productDetails{
 	border: solid rgb(206, 187, 187) 1px;
-	margin: 20px auto;
+	margin: 35px auto;
 	flex: 0 0 calc(33.33% - 30px);
 	background-color: rgb(254, 248, 248);
 	min-width: 250px;
