@@ -6,7 +6,7 @@
   margin: auto;
 }
 .itemDetails h2{
-  color: yellow;
+  color: #F2BE1A;
 	font-weight: 700;
 	font-size: 3rem;
 	text-align: left;
@@ -32,10 +32,10 @@ main{
   height: auto;
 }
 #productDetails{
-	border: solid rgb(206, 187, 187) 1px;
+	border: solid rgb(199, 203, 218) 1px;
 	margin: 35px auto;
 	flex: 0 0 calc(33.33% - 30px);
-	background-color: rgb(254, 248, 248);
+	background-color:rgba(199, 203, 218, .1);
 	min-width: 250px;
 }
 .itemDetails .button{
