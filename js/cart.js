@@ -1,6 +1,21 @@
-// according to a similar scenario, it takes data from the page, in our case from products.html, and reproduces objects in the cart on a separate page, the number of objects depends on the objects selected by the user
+// according to a similar scenario, it takes data from the page,and reproduces objects in the cart on a separate page, the number of objects depends on the objects selected by the user
 
-function shoppingCart(object) {
+function clearCart() { // function to fully clear the cart
+  localStorage.removeItem('cart');
+  shoppingCart(); 
+}
+
+function removeItem(index) { // remove the item from the shopping cart 
+	const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+	if (index >= 0 && index < cart.length) {
+		cart.splice(index, 1); 
+		localStorage.setItem('cart', JSON.stringify(cart));
+		shoppingCart();  // running the function again after we deleted an object
+	}
+}
+
+function shoppingCart(object) { // the same procedure for creating values ​​and assigning variables to them as in products.js
 	const cartContainer = document.getElementById('cartContainer');
 	cartContainer.innerHTML = '';
 
@@ -32,15 +47,22 @@ function shoppingCart(object) {
 			priceItem.classList.add('price')
 			priceItem.textContent = item[3];
 
+			const removeButton = document.createElement('button');
+      removeButton.textContent = 'Remove';
+      removeButton.addEventListener('click', () => removeItem(index));
+
+			// this is done so that some objects are displayed in a line(flex), in our case it is necessary that the picture and its description should be one on top of the other, basically a div in another div.
 			itemDetails.appendChild(photoItem);
     itemDetails.appendChild(cartDescription);
 
+		// appending objects to the main container
 			cartItem.appendChild(cartIndex);
 			cartItem.appendChild(itemDetails);
 			cartItem.appendChild(cartName);
 			cartItem.appendChild(priceItem);
+			cartItem.appendChild(removeButton);
 			cartContainer.appendChild(cartItem);
 	});
 }
-// initialisation of function
+// initialisation of the cart function
 shoppingCart();
