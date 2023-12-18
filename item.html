@@ -1,3 +1,5 @@
+<!--item.html-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,9 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="header.css"/>
 		<link rel="stylesheet" type="text/css" href="footer.css"/>
+    <link rel="stylesheet" type="text/css" href="item.css"/>
+    <link rel="stylesheet" type="text/css" href="products.css"/>
   <title>Item Page</title>
 </head>
 <body>
+
   <header class="header-main">
     <div class="header-main-logo">
         <img src="Logo-Color.png" alt="logo Uni">
@@ -15,32 +20,32 @@
     </div>
         <nav class="header-main-nav">
             <ul class="logoList">
-                <li><a href="Assignment.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="cart.html">Cart</a></li>
             </ul>
         </nav>
         <div class="burger-menu-button"><div>
     </header>
-    <!-- Burger menu -->
+ 
+ <!--Burger menu-->	   
 <nav class="burger-menu">
-
 <ul>
-    <li><a href="Assignment.html">Home</a></li>
+    <li><a href="index.html">Home</a></li>
     <li><a href="products.html">Products</a></li>
     <li><a href="cart.html">Cart</a></li>
 </ul>
-
 </nav>
-<!-- Burger menu stop -->
 
-  <div id="productDetails"></div>
+<main>
+  <div class="itemDetails" id="productDetails"></div>
+</main>
 
-  <footer id="footer">
-  </footer>
+<footer id="footer">
+</footer>
+
 </body>
 </html>
-
 
 <script src="js/item.js"></script>
 <script src="js/burger-menu.js"></script>
