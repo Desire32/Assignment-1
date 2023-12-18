@@ -2,7 +2,7 @@
 
 
 document.addEventListener('DOMContentLoaded', function () { // guarantees better code performance
-  fetch('/markov-nikita_21071959_assignment-one/items.csv')
+  fetch('./items.csv')
     .then(response => response.text())
     .then(text => {
 
