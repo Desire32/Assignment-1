@@ -15,6 +15,7 @@
 main{
 	width: auto;
 	margin: 2% 3%;
+	min-height: 70vh;
 }
 .itemDetails .price{
   font-weight: 800;
