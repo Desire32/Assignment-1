@@ -1,3 +1,4 @@
+/* products.css file, used for products.html */
 
 .item img {
 	width: 100%;
@@ -15,7 +16,6 @@
 	text-align: center;
 	display: flex;
 	flex-wrap: wrap;
-	width: 50%;
 	margin: auto;
 }
 .item .price {
@@ -24,19 +24,17 @@
 	padding: 10px;
 	text-align: left;
 }
-.item .description {
+.item .description, .read-more {
 	padding: 10px;
 	font-size: 1.5rem;
 	text-align: left;
 }
 .item {
-	box-sizing: border-box; /* ?? */
 	border: solid rgb(206, 187, 187) 1px;
 	margin: 20px auto;
 	flex: 0 0 calc(33.33% - 30px);
 	background-color: rgb(254, 248, 248);
 	min-width: 250px;
-	
 }
 .item .button {
 	margin-bottom: 15px;
@@ -44,4 +42,34 @@
 	font-size: 1.3rem;
 	font-weight: 700;
 }
-
+.productsList{
+margin: 3%;
+text-align: left;
+}
+main .productsList a{
+	color: blue;
+	margin-right: 35px;
+	font-size: 1.9rem;
+}
+.productsList .productsWord{
+	font-size: 1.9rem;
+	margin-right: 15px;
+}
+main{
+	width: auto;
+	margin: 2% 3%;
+	text-align: left;
+}
+.productsPage{
+	max-width: 825px;
+	margin: auto;
+}
+main .scrollButton{
+	position: fixed;
+	font-size: 1.3rem;
+	border-radius: 50%;
+	top: 55%;
+	background-color: purple;
+	color: white;
+	padding: 25px;
+}
