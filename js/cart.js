@@ -1,3 +1,5 @@
+// according to a similar scenario, it takes data from the page, in our case from products.html, and reproduces objects in the cart on a separate page, the number of objects depends on the objects selected by the user
+
 function shoppingCart(object) {
 	const cartContainer = document.getElementById('cartContainer');
 	cartContainer.innerHTML = '';
@@ -40,5 +42,5 @@ function shoppingCart(object) {
 			cartContainer.appendChild(cartItem);
 	});
 }
-
+// initialisation of function
 shoppingCart();
