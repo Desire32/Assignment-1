@@ -6,7 +6,7 @@
 	max-height: 330px;
 }
 .item h2 {
-	color: yellow;
+	color: #F2BE1A;
 	font-weight: 700;
 	font-size: 3rem;
 	text-align: left;
@@ -29,11 +29,14 @@
 	font-size: 1.5rem;
 	text-align: left;
 }
+.item .read-more{
+	color: #0099D2;
+}
 .item {
-	border: solid rgb(206, 187, 187) 1px;
+	border: solid rgb(199, 203, 218) 1px;
 	margin: 20px auto;
 	flex: 0 0 calc(33.33% - 30px);
-	background-color: rgb(254, 248, 248);
+	background-color: rgba(199, 203, 218, .1);
 	min-width: 250px;
 }
 .item .button {
@@ -47,7 +50,7 @@ margin: 3%;
 text-align: left;
 }
 main .productsList a{
-	color: blue;
+	color: #0099D2;
 	margin-right: 35px;
 	font-size: 1.9rem;
 }
@@ -69,7 +72,7 @@ main .scrollButton{
 	font-size: 1.3rem;
 	border-radius: 50%;
 	top: 55%;
-	background-color: purple;
+	background-color: #34516C;
 	color: white;
 	padding: 25px;
 }
