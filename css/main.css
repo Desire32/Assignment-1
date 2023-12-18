@@ -1,44 +1,36 @@
+/* main.css, which used for index.html file, needed for working with main part of the page */
+
 main {
+	padding: 20px 0;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	margin: 2% auto;
+	margin: 1% 2%;
 	flex-direction: column;
 	width: auto;
+	min-height: 80vh;
 }
 .frontPage h1 {
 	color: #34516c;
 	font-weight: 650;
-	width: 100%;
 	font-size: 4.2rem;
 	margin-bottom: 10px;
 }
 main .videoPart h1, .framePart h1 {
 	font-size: 2.6rem;
 	color: yellow;
-	margin: 15px 0 15px 0;
+	padding: 20px 0 10px 0;
 
 }
-
 main .videoPart video{
 	width: 100%;
 	max-width: 780px;
 	
 }
-
 main .framePart iframe{
 	width: 100%;
 	min-height: 330px;
 	
 }
-main .framePart {
-	width: 100%;
-	max-width: 780px;
-	
-}
-
-
-
 .frontPage p {
 	font-size: 1.7rem;
 }
@@ -56,20 +48,16 @@ main .framePart {
 	main .videoPart video{
 		max-width: 820px;
 	}
-	main .framePart {
-		max-width: 820px;
-	}
 }
 @media only screen and (max-width: 768px) {
 	.frontPage h1 {
 		font-size: 3.3rem;
 	}
 	.frontPage p {
-		font-size: 1.4rem;
+		font-size: 1.5rem;
 	}
 	main .videoPart h1, .framePart h1 {
 		font-size: 2.2rem;
-		width: 70;
 	}
 	
 }
