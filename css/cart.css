@@ -39,7 +39,7 @@ main .text {
 main {
   margin: 2% 3%;
   text-align: center;
-  min-height: 80vh;
+  min-height: 90vh;
 }
 .CartList {
   max-width: 820px;
