@@ -1,0 +1,89 @@
+main {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  margin: 1% 2%;
+  flex-direction: column;
+  width: auto;
+  min-height: 80vh;
+}
+
+.signUpPage p {
+  font-size: 1.7rem;
+}
+
+.signUpPage {
+  max-width: 900px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.passwordText {
+  margin-top: 15px;
+}
+
+.passwordCriterias {
+  padding: 25px 0 25px 0;
+  border-style: dotted;
+  border-radius: 10px;
+  border-width: 2px;
+  padding: 30px;
+  background-color: beige;
+}
+
+.criterias p {
+  font-size: 1.6rem;
+  margin: 5px 0 5px 0;
+
+}
+
+.signUpSuccess {
+  font-size: 2.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-style: dotted;
+  border-radius: 10px;
+  border-width: 2px;
+  padding: 30px;
+  background-color: beige;
+}
+
+.signUpText {
+  margin: 20px 0 20px 0;
+}
+
+.signUpPage h1 {
+  color: #34516c;
+  font-weight: 650;
+  font-size: 4.2rem;
+  margin-bottom: 10px;
+}
+
+.signUpPage h2 {
+  color: #42346c;
+  font-weight: 650;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+#address {
+  padding: 80px;
+}
+
+.inputBar {
+  margin: 25px 0 25px 0;
+  font-size: 1.3rem;
+  border-radius: 15%;
+  background-color: #cfd5db;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  width: 50%;
+}
+
+.buttonSubmit {
+  font-size: 1.5rem;
+  border-radius: 100%;
+  background-color: #6aaeee;
+  color: white;
+  padding: 25px;
+}
