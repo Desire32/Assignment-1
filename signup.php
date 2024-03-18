@@ -19,9 +19,9 @@
     </div>
     <nav class="header-main-nav">
       <ul class="logoList">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="cart.html">Cart</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="products.php">Products</a></li>
+        <li><a href="cart.php">Cart</a></li>
       </ul>
     </nav>
     <div class="burger-menu-button">
@@ -30,9 +30,9 @@
 
   <nav class="burger-menu">
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="products.html">Products</a></li>
-      <li><a href="cart.html">Cart</a></li>
+      <li><a href="index.php">Home</a></li>
+      <li><a href="products.php">Products</a></li>
+      <li><a href="cart.php">Cart</a></li>
     </ul>
   </nav>
 
