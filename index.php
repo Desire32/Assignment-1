@@ -8,6 +8,9 @@
 
     $result = mysqli_query($connect, "SELECT * FROM tbl_offers");
 
+
+    echo "<style>$css</style>"
+
  ?>
 
 <!DOCTYPE html>
@@ -62,12 +65,21 @@
             <h2>Offers: </h2>
 
             <?php 
+
             
             while ($row = mysqli_fetch_assoc($result)) {
+
+                echo "<div class='indexOffers'>";
+                
                 echo "ID: " . $row["offer_id"] . "<br>";
+                
+                
                 echo "Title: " . $row["offer_title"] . "<br>";
+                
+               
                 echo "Dec: " . $row["offer_dec"] . "<br>";
-                echo "<br>";
+                
+                echo "</div><br>";
             }
             
             ?>

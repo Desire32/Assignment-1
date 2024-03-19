@@ -1,5 +1,16 @@
 <!--products.html-->
 
+
+<?php
+
+$connect = mysqli_connect("vesta.uclan.ac.uk", "nmarkov","njdAnzfb", "nmarkov");
+
+$result = mysqli_query($connect, "SELECT * FROM tbl_products");
+
+$css = file_get_contents('css/products.css');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,6 +54,7 @@
 	</nav>
 
 	<main>
+
 		<button class="scrollButton" id="Button">Top</button>
 		<div class="productsPage">
 			<div class="productsList">
@@ -56,8 +68,22 @@
 				<a class="list" href="#jumpers">jumpers</a>
 			</div>
 
-			<div class="container" id="productContainer">
-			</div>
+			<div class='container'>
+<?php
+	
+while ($row = mysqli_fetch_assoc($result)) {
+	
+    echo "<div class='item'>";
+    echo "<img src='" . $row["product_image"] . "' alt='Product Image'>";
+    echo "<h2>" . $row["product_title"] . "</h2>";
+    echo "<div class='price'>" . $row["product_price"] . "</div>";
+    echo "<div class='description'>" . $row["product_desc"] . "</div>";
+    echo "<a class='read-more' href='#'>Read more</a>";
+    echo "</div>";
+		
+}
+?>
+</div>
 		</div>
 	</main>
 
