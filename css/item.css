@@ -1,47 +1,52 @@
-/* item.css, which used for item.html page */
-
-.itemDetails{
-  width: 45%;
-  text-align: center;
-  margin: auto;
+.itemDetails {
+	width: 45%;
+	text-align: center;
+	margin: auto
 }
-.itemDetails h2{
-  color: #F2BE1A;
+
+.itemDetails h2 {
+	color: #f2be1a;
 	font-weight: 700;
 	font-size: 3rem;
 	text-align: left;
-	margin-left: 10px;
+	margin-left: 10px
 }
-main{
+
+main {
 	width: auto;
 	margin: 2% 3%;
-	min-height: 70vh;
+	min-height: 70vh
 }
-.itemDetails .price{
-  font-weight: 800;
+
+.itemDetails .price {
+	font-weight: 800;
 	font-size: 1.2rem;
 	padding: 10px;
-	text-align: left;
+	text-align: left
 }
-.itemDetails .description{
-  padding: 10px;
+
+.itemDetails .description {
+	padding: 10px;
 	font-size: 1.5rem;
-	text-align: left;
+	text-align: left
 }
-.itemDetails img{
-  width: 100%;
-  height: auto;
+
+.itemDetails img {
+	width: 100%;
+	height: auto
 }
-#productDetails{
-	border: solid rgb(199, 203, 218) 1px;
+
+#productDetails {
+	border: solid #c7cbda 1px;
 	margin: 35px auto;
 	flex: 0 0 calc(33.33% - 30px);
-	background-color:rgba(199, 203, 218, .1);
-	min-width: 250px;
+	background-color: rgba(199, 203, 218, .1);
+	min-width: 250px
 }
-.itemDetails .button{
-  margin-bottom: 15px;
+
+.itemDetails .button {
+	margin-bottom: 15px;
 	padding: 4px 8px;
 	font-size: 1.3rem;
-	font-weight: 700;
+	font-weight: 700
 }

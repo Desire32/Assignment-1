@@ -16,14 +16,3 @@ burgerOpen.onclick = function () {
         }
 }
 
-// a button that appears on the page "products", allowing you to return to the very top of the page
-
-let buttonPressed = document.getElementById('Button');
-
-buttonPressed.addEventListener('click', function() {
-  
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
