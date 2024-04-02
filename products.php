@@ -17,10 +17,10 @@ $css = file_get_contents('css/products.css');
 <head>
 	<meta charset="UTF-8" />
 	<title>Products</title>
-	<link rel="stylesheet" type="text/css" href="css/header.css" />
-	<link rel="stylesheet" type="text/css" href="css/footer.css" />
-	<link rel="stylesheet" type="text/css" href="css/products.css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/products.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -38,7 +38,7 @@ $css = file_get_contents('css/products.css');
 			</ul>
 		</nav>
 		<div class="burger-menu-button">
-			<div>
+</div>
 	</header>
 
 	<!--Burger menu-->
@@ -55,12 +55,12 @@ $css = file_get_contents('css/products.css');
 
 	<main>
 
-		<button class="scrollButton" id="Button">Top</button>
+		<button class="scrollButton" id="ButtonTop">Top</button>
 		<div class="productsPage">
 			<div class="productsList">
 				<div class="searchList">
 					<input class="searchInput" id="input">
-					<button class="searchButton" id="Button">Search</button>
+					<button class="searchButton" id="ButtonSearch">Search</button>
 				</div>
 				<span class="productsWord"></span>
 				<a class="list" href="#t-shirts">t-shirts</a>

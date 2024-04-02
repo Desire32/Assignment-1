@@ -14,17 +14,17 @@
  ?>
 
 <!DOCTYPE html>
-<lang="en">
+<html lang="en">
 
     <head>
         <meta charset="UTF-8">
         <title>Home</title>
-        <link rel="stylesheet" type="text/css" href="css/header.css" />
-        <link rel="stylesheet" type="text/css" href="css/footer.css" />
-        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
 
 
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <header class="header-main" id="header">
@@ -41,7 +41,7 @@
             </ul>
         </nav>
         <div class="burger-menu-button">
-            <div>
+</div>
     </header>
 
     <!--Burger menu-->
