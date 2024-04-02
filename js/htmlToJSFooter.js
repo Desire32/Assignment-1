@@ -30,3 +30,4 @@ function htmlToJSFooter(){
 }
 // initialisation of function
 htmlToJSFooter();
+

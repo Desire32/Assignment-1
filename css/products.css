@@ -12,6 +12,10 @@
 	margin-left: 10px
 }
 
+button{
+	cursor: pointer;
+}
+
 .container {
 	text-align: center;
 	display: flex;

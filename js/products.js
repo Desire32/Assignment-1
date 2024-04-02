@@ -1,5 +1,10 @@
-document.addEventListener('DOMContentLoaded', function () {
+
 	const productList = document.querySelectorAll('.item')
+	const searchButton = document.getElementById('ButtonSearch')
+	const searchInput = document.getElementById('input')
+
+	console.log(searchButton) 
+	console.log(searchInput) 
 
 	function filterProducts(category) {
 		productList.forEach(item => {
@@ -18,18 +23,26 @@ document.addEventListener('DOMContentLoaded', function () {
 			filterProducts(category)
 		})
 	})
-})
 
+	if (searchButton) {
+		searchButton.addEventListener('click', function () {
+			const searchText = searchInput.value.trim().toLowerCase()
+			console.log('Pressed')
 
-// a button that appears on the page "products", allowing you to return to the very top of the page
-
-let buttonPressed = document.getElementById('ButtonTop')
-
-buttonPressed.addEventListener('click', function() {
-  
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
+			productList.forEach(item => {
+				const titleElement = item.querySelector('h2')
+				if (titleElement) {
+					const title = titleElement.textContent.trim().toLowerCase()
+					if (title.includes(searchText)) {
+						item.style.display = 'block'
+					} else {
+						item.style.display = 'none'
+					}
+				}
+			})
+			searchInput.value = ''
+		})
+	} else {
+		console.log('searchButton is null')
+	}
 

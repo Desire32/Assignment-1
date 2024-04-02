@@ -1,4 +1,29 @@
-<!--item.html-->
+
+<?php
+
+$connect = mysqli_connect("vesta.uclan.ac.uk", "nmarkov","njdAnzfb", "nmarkov");
+
+$productsCss = file_get_contents('css/products.css');
+$headercss = file_get_contents('css/header.css');
+$footercss = file_get_contents('css/footer.css');
+$itemCss = file_get_contents('css/item.css');
+
+echo "<style>$productsCss</style>
+<style>$headercss</style>
+<style>$itemCss</style>
+<style>$footercss</style>";
+
+
+    if(isset($_GET['id'])) {
+    $id = $_GET['id'];
+    
+
+    $result = mysqli_query($connect, "SELECT * FROM tbl_products WHERE product_id = $id");
+
+    if(mysqli_num_rows($result) > 0) {
+        $product = mysqli_fetch_assoc($result);
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,7 +34,7 @@
 		<link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/item.css">
     <link rel="stylesheet" type="text/css" href="css/products.css">
-  <title>Item</title>
+  <title><?php echo $product['product_title']; ?></title>
 </head>
 <body>
 
@@ -40,7 +65,12 @@
 </nav>
 
 <main>
-  <div class="itemDetails" id="productDetails"></div>
+  <div class="itemDetails" id="productDetails">
+    <h1><?php echo $product['product_title']; ?></h1>
+    <img src="<?php echo $product['product_image']; ?>" alt="Product Image">
+    <p><?php echo $product['product_desc']; ?></p>
+    <p><?php echo $product['product_price']; ?></p>
+  </div>
 </main>
 
 <footer id="footer">
@@ -49,6 +79,15 @@
 </body>
 </html>
 
-<script src="js/item.js"></script>
+
 <script src="js/burger-menu.js"></script>
 <script src="js/htmlToJSFooter.js"></script>
+
+<?php
+    } else {
+        echo "Товар не найден.";
+    }
+} else {
+    echo "Идентификатор товара не передан.";
+}
+?>
