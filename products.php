@@ -63,9 +63,9 @@ $css = file_get_contents('css/products.css');
 					<button class="searchButton" id="ButtonSearch">Search</button>
 				</div>
 				<span class="productsWord"></span>
-				<a class="list" href="#t-shirts">t-shirts</a>
-				<a class="list" href="#hoodies">hoodies</a>
-				<a class="list" href="#jumpers">jumpers</a>
+				<a class="list" data-category="t-shirts" href="#t-shirts">t-shirts</a>
+				<a class="list" data-category="hoodies" href="#hoodies">hoodies</a>
+				<a class="list" data-category="jumpers" href="#jumpers">jumpers</a>
 			</div>
 
 			<div class='container'>
