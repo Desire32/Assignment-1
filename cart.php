@@ -1,4 +1,3 @@
-<!--cart.html-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -43,7 +42,7 @@
         <div class="CartList">
             <h1>Shopping cart</h1>
             <div class="text">The items you've added to your shopping cart:</div>
-            <button onclick="clearCart()">Clear Cart</button>
+            <button id="clearButton">Clear Cart</button>
         </div>
         <div class="cartInfo">
             <span class="ItemWord">Item</span>
@@ -52,24 +51,54 @@
         <div class="container" id="cartContainer">
         </div>
 
-        <div class="loginList">
+        <form class="loginList" id="loginForm" method="POST" action="cart.php">
             <p class="text">In order to check out you must log in</p>
             <p class="inputText">Email:</p>
-            <input type="email" class="inputBar" id="email">
+            <input type="email" class="inputBar" id="email" name="email_data">
             <p class="inputText">Password:</p>
-            <input type="password" class="inputBar" id="password">
-            <button class="buttonSubmit" id="button">Confirm</button>
-        </div>
-
+            <input type="password" class="inputBar" id="password" name="pass">
+            <button class="buttonSubmit" id="buttonLogin" type="submit">Confirm</button>
+        </form>
     </main>
 
     <footer id="footer">
     </footer>
 
+    <script src="js/burger-menu.js"></script>
+    <script src="js/htmlToJSFooter.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 
 </html>
 
-<script src="js/cart.js"></script>
-<script src="js/burger-menu.js"></script>
-<script src="js/htmlToJSFooter.js"></script>
+
+<?php
+
+$connect = mysqli_connect("vesta.uclan.ac.uk", "nmarkov", "njdAnzfb", "nmarkov");
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST['email_data']) && isset($_POST['pass'])) {
+        $email = mysqli_real_escape_string($connect, $_POST['email_data']);
+        $password = $_POST['pass'];
+
+        $query = "SELECT * FROM tbl_users WHERE user_email = '$email'";
+        $result = mysqli_query($connect, $query);
+
+        if ($result) {
+            if (mysqli_num_rows($result) > 0) {
+                $user = mysqli_fetch_assoc($result);
+                if (password_verify($password, $user['user_pass'])) {
+                    echo '<script>alert("Login successful!");</script>';
+                } else {
+                    echo '<script>alert("Incorrect password.");</script>';
+                }
+            } else {
+                echo '<script>alert("No user found with this email address.");</script>';
+            }
+        } else {
+            echo '<script>alert("Error executing query. Please try again.");</script>';
+            echo "Error: " . $query . "<br>" . mysqli_error($connect); 
+        }
+    }
+}
+?>

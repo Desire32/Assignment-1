@@ -15,7 +15,9 @@
 button{
 	cursor: pointer;
 }
-
+.buttonBuy{
+	font-size: 1.5rem;
+}
 .container {
 	text-align: center;
 	display: flex;

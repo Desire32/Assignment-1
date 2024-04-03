@@ -64,7 +64,6 @@
 <script src="js/burger-menu.js"></script>
 <script src="js/htmlToJSFooter.js"></script>
 <script src="js/signup.js"></script>
-<script src="js/registerForm.js"></script>
 
 <?php
 
@@ -85,7 +84,6 @@ if ($result) {
   echo '<script>alert("User account created successfully! Data: Name - ' . $name . ', Email - ' . $email . ', Address - ' . $address . '");</script>';
 } else {
   echo '<script>alert("Error creating user account. Please try again.");</script>';
-  echo "Error: " . $query . "<br>" . mysqli_error($connect); 
 }
 }
 ?>

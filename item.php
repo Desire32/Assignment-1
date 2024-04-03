@@ -70,10 +70,12 @@ echo "<style>$productsCss</style>
   echo '<img src="' . $product['product_image'] . '" alt="Product Image">';
   echo '<h2>' . $product['product_title'] . '</h2>';
   echo '<p class="description">' . $product['product_desc'] . '</p>';
-  echo '<p class="price">' . $product['product_price'] . '</p>';
+  echo '<p class="price">' . '€' .$product['product_price'] . '</p>';
+  echo "<button class='add-to-cart buttonBuy' data-product='" . htmlspecialchars(json_encode($product), ENT_QUOTES, 'UTF-8') . "'>Add to Cart</button>";
   echo '</div>';
   ?>
 </main>
+
 
 
 <footer id="footer">
@@ -81,6 +83,30 @@ echo "<style>$productsCss</style>
 
 </body>
 </html>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function () {
+	const addToCartButtons = document.querySelectorAll('.add-to-cart')
+
+	addToCartButtons.forEach(button => {
+		button.addEventListener('click', function () {
+			const productData = JSON.parse(this.dataset.product)
+			addToCart(productData)
+		})
+	})
+
+	function addToCart(product) {
+		let cart = JSON.parse(localStorage.getItem('cart')) || []
+		cart.push(product)
+		localStorage.setItem('cart', JSON.stringify(cart))
+		alert('Item added to the cart!')
+		updateCartDisplay()
+	}
+
+})
+
+</script>
 
 
 <script src="js/burger-menu.js"></script>

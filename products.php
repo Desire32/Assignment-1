@@ -80,12 +80,14 @@ while ($row = mysqli_fetch_assoc($result)) {
     echo "<div class='item' data-category='" . $row["product_type"] . "'>";
     echo "<img src='" . $row["product_image"] . "' alt='Product Image'>";
     echo "<h2>" . $row["product_title"] . "</h2>";
-    echo "<div class='price'>" . $row["product_price"] . "</div>";
+    echo "<p class='price'>€" . $row["product_price"] . "</p>"; 
     echo "<div class='description'>" . $row["product_desc"] . "</div>";
+    echo "<button class='add-to-cart buttonBuy' data-product='" . htmlspecialchars(json_encode($row), ENT_QUOTES, 'UTF-8') . "'>Add to Cart</button>";
     echo "<a class='read-more' href='item.php?id=" . $row["product_id"] . "'>Read more</a>";
     echo "</div>";
 }
 ?>
+
 
 </div>
 		</div>
@@ -114,4 +116,4 @@ while ($row = mysqli_fetch_assoc($result)) {
 
 <script src="js/burger-menu.js"></script>
 <script src="js/htmlToJSFooter.js"></script>
-	<script src="js/products.js"></script>
+<script src="js/products.js"></script>
