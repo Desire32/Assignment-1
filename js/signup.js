@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-	let successIcon = document.querySelector('.signUpSuccess')
 	var passwordField = document.getElementById('password')
 	var confirmPasswordField = document.getElementById('confirmPassword')
 	var passwordCriteriaTable = document.querySelector('.passwordCriterias')
@@ -72,29 +71,5 @@ document.addEventListener('DOMContentLoaded', function () {
 			alert('Passwords do not match!')
 			return
 		}
-
-		var userData = {
-			name: name,
-			email: email,
-			password: password,
-			address: address,
-		}
-
-		var userDataJSON = JSON.stringify(userData)
-		localStorage.setItem('userData', userDataJSON)
-
-		alert('Your data has been successfully saved to local storage!')
-		successIcon.style.display = 'block'
-
-		window.scrollTo(0, 0)
-		setTimeout(function () {
-			location.reload()
-		}, 1000)
-
-    nameField.value = ''
-		emailField.value = ''
-		passwordField.value = ''
-		confirmPasswordField.value = ''
-		addressField.value = ''
 	})
 })

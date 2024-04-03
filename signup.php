@@ -34,15 +34,15 @@
   </nav>
   <main>
     <p class="signUpSuccess"> User account created successfully!</p>
-    <div class="signUpPage">
+    <form class="signUpPage" method="POST" action="signup.php">
       <h1>Sign up</h1><br>
       <p class="textInfo">In order to purchase from the Student's Union shop, you need to create an account with all
         fields below required. If you have any difficulties with the form please contact the webmaster(hyperlink needed)
-      <p>Full Name: </p> <input type="text" class="inputBar" id="name">
-      <p>Email address:</p> <input type="email" class="inputBar" id="email">
+      <p>Full Name: </p> <input type="text" class="inputBar" id="name" name="full_name">
+<p>Email address:</p> <input type="email" class="inputBar" id="email" name="email">
       <p>Password: </p>
       <p class="textInfo">Must contain at least one number and one uppercase and lowercase letter, and at least 8 or
-        more characters</p> <input type="password" class="inputBar" id="password">
+        more characters</p> <p>Password: </p> <input type="password" class="inputBar" id="password" name="pass">
       <div class="passwordCriterias">
         <h2>Password must contain the following: </h2>
         <div class="criterias">
@@ -52,10 +52,10 @@
           <p id="length">✗ Minimum 8 characters</p>
         </div>
       </div>
-      <p>Confirm password: </p> <input type="password" class="inputBar" id="confirmPassword">
-      <p>Address: </p> <input type="text" class="inputBar" id="address"> <button class="buttonSubmit"
-        id="button">Confirm</button>
-    </div>
+      <p>Confirm password: </p> <input type="password" class="inputBar" id="confirmPassword" name="confirm_pass">
+      <p>Address: </p> <input type="text" class="inputBar" id="address" name="address">
+       <button class="buttonSubmit" id="button" type="submit">Confirm</button>
+</form>
   </main>
   <footer id="footer"> </footer>
 </body>
@@ -64,3 +64,28 @@
 <script src="js/burger-menu.js"></script>
 <script src="js/htmlToJSFooter.js"></script>
 <script src="js/signup.js"></script>
+<script src="js/registerForm.js"></script>
+
+<?php
+
+$connect = mysqli_connect("vesta.uclan.ac.uk", "nmarkov", "njdAnzfb", "nmarkov");
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+  $name = mysqli_real_escape_string($connect, $_POST['full_name']);
+  $email = mysqli_real_escape_string($connect, $_POST['email']);
+  $password = password_hash($_POST['pass'], PASSWORD_DEFAULT);
+  $address = mysqli_real_escape_string($connect, $_POST['address']);
+
+  $query = "INSERT INTO tbl_users (user_full_name, user_email, user_pass, user_address) VALUES ('$name', '$email', '$password', '$address')";
+$result = mysqli_query($connect, $query);
+
+if ($result) {
+  echo '<script>alert("User account created successfully! Data: Name - ' . $name . ', Email - ' . $email . ', Address - ' . $address . '");</script>';
+} else {
+  echo '<script>alert("Error creating user account. Please try again.");</script>';
+  echo "Error: " . $query . "<br>" . mysqli_error($connect); 
+}
+}
+?>
