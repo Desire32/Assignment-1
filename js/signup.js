@@ -5,22 +5,15 @@ document.addEventListener('DOMContentLoaded', function () {
 	var nameField = document.getElementById('name')
 	var emailField = document.getElementById('email')
 	var addressField = document.getElementById('address')
+	var signUpSuccess = document.getElementById('SuccessIcon')
+	var signUpForm = document.querySelector('.signUpPage')
 
-	passwordCriteriaTable.style.display = 'none'
 
 	passwordField.addEventListener('focus', function () {
 		passwordCriteriaTable.style.display = 'block'
 	})
 
 	passwordField.addEventListener('blur', function () {
-		passwordCriteriaTable.style.display = 'none'
-	})
-
-	confirmPasswordField.addEventListener('focus', function () {
-		passwordCriteriaTable.style.display = 'block'
-	})
-
-	confirmPasswordField.addEventListener('blur', function () {
 		passwordCriteriaTable.style.display = 'none'
 	})
 
@@ -49,12 +42,19 @@ document.addEventListener('DOMContentLoaded', function () {
 			: '✗ Minimum 8 characters'
 	})
 
-	document.getElementById('button').addEventListener('click', function () {
+	document.getElementById('button').addEventListener('submit', function (event) {
 		var name = nameField.value
 		var email = emailField.value
 		var password = passwordField.value
 		var confirmPassword = confirmPasswordField.value
 		var address = addressField.value
+		document.getElementById('SuccessIcon').style.display = 'block'
+
+		if (password !== confirmPassword) {
+			alert('Passwords do not match!')
+			event.preventDefault()
+			return false
+		}
 
 		if (
 			name.trim() === '' ||
@@ -64,12 +64,8 @@ document.addEventListener('DOMContentLoaded', function () {
 			address.trim() === ''
 		) {
 			alert('Please fill in all the fields!')
-			return
-		}
-
-		if (password !== confirmPassword) {
-			alert('Passwords do not match!')
-			return
+			event.preventDefault()
+			return false
 		}
 	})
 })

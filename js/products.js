@@ -45,6 +45,26 @@ if (searchButton) {
 	console.log('searchButton is null')
 }
 
+if (searchInput) {
+	searchInput.addEventListener('input', function () {
+		const searchText = this.value.trim().toLowerCase()
+
+		productList.forEach(item => {
+			const titleElement = item.querySelector('h2')
+			if (titleElement) {
+				const title = titleElement.textContent.trim().toLowerCase()
+				if (title.includes(searchText)) {
+					item.style.display = 'block'
+				} else {
+					item.style.display = 'none'
+				}
+			}
+		})
+	})
+} else {
+	console.log('searchInput is null')
+}
+
 
 document.addEventListener('DOMContentLoaded', function () {
 	const addToCartButtons = document.querySelectorAll('.add-to-cart')

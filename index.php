@@ -64,25 +64,27 @@
             <p><br>Everything you need to know about UCLan Student's Union. Your membership starts here.</p>
             <h2>Offers: </h2>
 
+            <div class="offersContainer">
+   
             <?php 
 
-            
+        
             while ($row = mysqli_fetch_assoc($result)) {
 
                 echo "<div class='indexOffers'>";
-                
-                echo "ID: " . $row["offer_id"] . "<br>";
-                
-                
-                echo "Title: " . $row["offer_title"] . "<br>";
+            
+                echo $row["offer_title"] . "<br>";
                 
                
-                echo "Dec: " . $row["offer_dec"] . "<br>";
+                echo $row["offer_dec"] . "<br>";
                 
                 echo "</div><br>";
             }
             
             ?>
+            </div>
+
+        
 
             <div class="videoPart">
                 <h1>Together</h1>

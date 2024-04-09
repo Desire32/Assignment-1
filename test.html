@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comment Form</title>
+  <link rel="stylesheet" type="text/css" href="css/item.css">
+</head>
+
+<body>
+
+  <main>
+    <div class="commentSection">
+      <h1>Average rating:</h1>
+      <form id="commentForm" class="commentForm" action="submit_comment.php" method="POST">
+        <div class="titleContainer">
+        <label for="title">Title:</label><br>
+        <input type="text" class="title" id="title" name="title"><br>
+        </div>
+        <div class="commentContainer">
+        <label for="comment">Comment:</label><br>
+        <input type="text" class="comment" id="comment" name="comment"><br>
+        </div>
+        <input type="submit" class="submitComment" value="Submit">
+      </form>
+    </div>
+  </main>
+
+</body>
+
+</html>

@@ -1,4 +1,3 @@
-<!--products.html-->
 
 
 <?php
@@ -8,12 +7,9 @@ $connect = mysqli_connect("vesta.uclan.ac.uk", "nmarkov","njdAnzfb", "nmarkov");
 $result = mysqli_query($connect, "SELECT * FROM tbl_products");
 
 $css = file_get_contents('css/products.css');
-$headercss = file_get_contents('css/header.css');
-$footercss = file_get_contents('css/footer.css');
 
-echo "<style>$css</style>
-<style>$headercss</style>
-<style>$footercss</style>"
+
+echo "<style>$css</style>";
 
 ?>
 
@@ -67,9 +63,10 @@ echo "<style>$css</style>
 					<button class="searchButton" id="ButtonSearch">Search</button>
 				</div>
 				<span class="productsWord"></span>
-				<a class="list" data-category="UCLan Logo Tshirt" href="#t-shirts">t-shirts</a>
-				<a class="list" data-category="UCLan Hoodie" href="#hoodies">hoodies</a>
-				<a class="list" data-category="UCLan Logo Jumper" href="#jumpers">jumpers</a>
+				<a class="list" data-category="UCLan Logo Tshirt" href="#t-shirts">T-shirts</a>
+                <a class="list" data-category="UCLan Hoodie" href="#hoodies">Hoodies</a>
+                <a class="list" data-category="UCLan Logo Jumper" href="#jumpers">Jumpers</a>
+                <a class="list" data-category="all" href="#all">All</a>
 			</div>
 
 			<div class='container'>
