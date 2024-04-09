@@ -1,136 +1,149 @@
-.itemCart,
-main {
-  align-items: center
+.itemCart,main {
+    align-items: center
+}
+
+.hidden {
+    display: none
 }
 
 .itemCart {
-  display: flex;
-  justify-content: space-between;
-  margin: 5%auto
+    display: flex;
+    justify-content: space-between;
+    margin: 5%auto
 }
 
 .itemCart img {
-  max-width: 70px;
-  height: auto;
-  border-radius: 4px
+    max-width: 70px;
+    height: auto;
+    border-radius: 4px
 }
 
 .itemCart h3 {
-  flex: 1;
-  margin-right: 25px
+    flex: 1;
+    margin-right: 25px
 }
 
 .itemCart .price {
-  font-size: 1.8rem
+    font-size: 1.8rem
 }
 
-.itemCart .description,
-.itemCart h3 {
-  font-size: 1.9rem
+.itemCart .description,.itemCart h3 {
+    font-size: 1.9rem
 }
 
 .itemDetails {
-  flex: 1
+    flex: 1
 }
 
 .itemCart .index {
-  font-size: 2rem
+    font-size: 2rem
 }
 
 main h1 {
-  font-size: 2.8rem;
-  color: #f2be1a
+    font-size: 2.8rem;
+    color: #f2be1a
 }
 
 main .text {
-  font-size: 2.1rem;
-  margin-top: 1%
+    font-size: 2.1rem;
+    margin-top: 1%
 }
 
 main {
-  margin: 2% 3%;
-  text-align: center;
-  min-height: 90vh;
-  width: auto
+    margin: 2% 3%;
+    text-align: center;
+    min-height: 90vh;
+    width: auto
 }
 
 .CartList {
-  text-align: left;
-  margin: auto auto 50px;
-  max-width: 800px
+    text-align: left;
+    margin: auto auto 50px;
+    max-width: 800px
 }
 
 .CartList h1 {
-  padding-top: 15px;
-  padding-bottom: 15px
+    padding-top: 15px;
+    padding-bottom: 15px
 }
 
 .cartInfo {
-  display: flex;
-  justify-content: space-between;
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin: 3%auto;
-  max-width: 800px
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 3%auto;
+    max-width: 800px
 }
 
 .container {
-  max-width: 800px;
-  margin: auto;
-  padding-left: 8px;
-  padding-bottom: 15px
+    max-width: 800px;
+    margin: auto;
+    padding-left: 8px;
+    padding-bottom: 15px
 }
 
 .ItemWord {
-  flex: 0
+    flex: 0
 }
 
 .ProductWord {
-  flex: 1;
-  margin-left: calc(32% - 10vh)
+    flex: 1;
+    margin-left: calc(32% - 10vh)
 }
 
-.CartList button {
-  font-size: 1.8rem;
-  margin-top: 30px;
-  padding: 5px;
-  border-radius: 5%
+.CartList .clearButton,.checkoutButton,.itemCart button {
+    border: 1px solid rgba(14,7,7,.53);
+    background-color: rgba(38,176,52,.3);
+    color: #fff;
+    padding: 5px 10px;
+    margin: 20px auto;
+    font-size: 1.6rem
+}
+
+.CartList .clearButton:hover,.checkoutButton:hover,.itemCart button:hover {
+    background-color: #4caf50;
+    box-shadow: 0 0 10px #4caf50
+}
+
+.checkoutButton,.itemCart button {
+    font-size: 2rem
 }
 
 .itemCart button {
-  font-size: 1.5rem;
-  padding: 0 3px;
-  margin-left: 30px
+    margin: 5px;
+    font-size: 1.6rem
 }
 
 .loginList {
-  max-width: 650px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  width: auto;
-  align-items: center
+    max-width: 650px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center
 }
 
 .inputBar {
-  margin: 25px 0;
-  font-size: 1.3rem;
-  border-radius: 15%;
-  background-color: #cfd5db;
-  color: #000;
-  padding: 20px;
-  width: 50%
+    margin: 25px 0;
+    font-size: 1.3rem;
+    border-radius: 15%;
+    background-color: #cfd5db;
+    color: #000;
+    padding: 20px;
+    width: 50%
 }
 
 .buttonSubmit {
-  font-size: 1.5rem;
-  border-radius: 100%;
-  background-color: #6aaeee;
-  color: #fff;
-  padding: 25px
+    font-size: 1.9rem;
+    border-radius: 100%;
+    background-color: #6aaeee;
+    color: #fff;
+    padding: 25px;
+    cursor: pointer
 }
 
 .inputText {
-  font-size: 1.7rem;
-  margin-top: 3%
+    font-size: 1.7rem;
+    margin-top: 3%
 }

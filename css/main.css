@@ -14,8 +14,10 @@ main {
 	font-weight: 650
 }
 
+	
+
 .frontPage h1 {
-	font-size: 4.2rem;
+	font-size: 5rem;
 	margin-bottom: 10px
 }
 
@@ -26,7 +28,7 @@ main {
 
 .framePart h1,
 main .videoPart h1 {
-	font-size: 2.6rem;
+	font-size: 3rem;
 	color: #f2be1a;
 	padding: 20px 0 10px
 }
@@ -42,28 +44,39 @@ main .framePart iframe {
 }
 
 .frontPage p {
-	font-size: 1.7rem
+	font-size: 1.8rem
 }
 
 .indexOffers {
-	font-size: 2rem;
 	border-style: solid;
 	border-width: medium;
-	border-color: #f2be1a
+	border-color: #f2be1a;
+	margin: 0px 10px 0px 10px;
+	padding: 5px;
+	font-size: 1.65rem;
+	font-weight: solid
+}
+
+.offersContainer{
+	margin: 30px 0px 30px 0px;
+	display:flex;
+	flex-direction:row;
+	max-width: 800px;
+	justify-content: center;
 }
 
 @media only screen and (max-width:1192px) {
 	.frontPage h1 {
-		font-size: 5rem
+		font-size: 4.2rem
 	}
 
 	.frontPage p {
-		font-size: 1.8rem
+		font-size: 1.5rem
 	}
 
 	.framePart h1,
 	main .videoPart h1 {
-		font-size: 3.2rem
+		font-size: 2.6rem
 	}
 
 	main .videoPart video {
@@ -83,5 +96,13 @@ main .framePart iframe {
 	.framePart h1,
 	main .videoPart h1 {
 		font-size: 2.2rem
+	}
+	
+	.offersContainer{
+		flex-direction: column;
+		padding: 20px;
+	}
+	.indexOffers{
+		margin: 15px 0px 15px 0px;
 	}
 }

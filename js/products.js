@@ -2,9 +2,8 @@ const productList = document.querySelectorAll('.item')
 const searchButton = document.getElementById('ButtonSearch')
 const searchInput = document.getElementById('input')
 
-console.log(searchButton)
-console.log(searchInput)
 
+// here filters were created for switching between objects and smart search, which allows you to search for objects by what the user wrote, and a button to add an item to the cart
 function filterProducts(category) {
 	productList.forEach(item => {
 		if (category === 'all' || item.dataset.category === category) {
@@ -41,30 +40,7 @@ if (searchButton) {
 		})
 		searchInput.value = ''
 	})
-} else {
-	console.log('searchButton is null')
 }
-
-if (searchInput) {
-	searchInput.addEventListener('input', function () {
-		const searchText = this.value.trim().toLowerCase()
-
-		productList.forEach(item => {
-			const titleElement = item.querySelector('h2')
-			if (titleElement) {
-				const title = titleElement.textContent.trim().toLowerCase()
-				if (title.includes(searchText)) {
-					item.style.display = 'block'
-				} else {
-					item.style.display = 'none'
-				}
-			}
-		})
-	})
-} else {
-	console.log('searchInput is null')
-}
-
 
 document.addEventListener('DOMContentLoaded', function () {
 	const addToCartButtons = document.querySelectorAll('.add-to-cart')

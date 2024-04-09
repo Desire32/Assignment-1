@@ -31,17 +31,10 @@ main {
   border-radius: 10px;
   border-width: 2px;
   padding: 30px;
-  background-color: #82e5e4
+  background-color: #82e5e4;
+  display: none;
 }
 
-.SuccessIcon{
-  font-size: 2rem;
-  border-style: dotted;
-    border-radius: 10px;
-    border-width: 2px;
-    padding: 30px;
-    background-color: #82e5e4
-}
 
 .criterias p {
   font-size: 1.6rem;

@@ -1,109 +1,174 @@
 .itemDetails {
-	width: 45%;
-	text-align: center;
-	margin: auto
+    width: 45%;
+    text-align: center;
+    margin: auto
 }
 
 .itemDetails h2 {
-	color: #f2be1a;
-	font-weight: 700;
-	font-size: 3rem;
-	text-align: left;
-	margin-left: 10px
+    color: #f2be1a;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: left;
+    margin-left: 10px
 }
 
 main {
-	width: auto;
-	margin: 2% 3%;
-	min-height: 70vh
+    width: auto;
+    margin: 2% 3%;
+    min-height: 70vh
 }
 
 .itemDetails .price {
-	font-weight: 800;
-	font-size: 1.2rem;
-	padding: 10px;
-	text-align: left
+    font-weight: 800;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: left
+}
+
+.comment-panel {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px
+}
+
+.comment-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px
+}
+
+.comment-author {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 5px
+}
+
+.comment-content {
+    font-size: 16px
+}
+
+.usersComments {
+    max-width: 600px;
+    margin: auto
+}
+
+.comment-begin {
+    font-size: 4rem;
+    margin: 20px auto;
+    color: purple;
+    font-style: italic
 }
 
 .commentSection .commentForm {
-	background-color: #7777c5;
-	align-items: center;
-	display: flex;
-	border-radius: 10%;
-	margin: 20px 0
+    background-color: #7777c5;
+    display: flex;
+    border-radius: 10%;
+    margin: auto;
+    align-items: center
 }
 
 .commentSection {
-	max-width: 700px;
-	width: auto
+    max-width: 800px;
+    min-width: 300px;
+    margin: 20px auto
+}
+
+.commentContainer label,.titleContainer label {
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 650;
+    font-style: italic
 }
 
 .commentSection h1 {
-	font-size: 2.5rem;
-	margin-bottom: 10px;
-	color: #34516c;
-	font-weight: 700
+    font-size: 3rem;
+    color: #34516c;
+    font-weight: 700;
+    margin: 20px auto
 }
 
-.commentSection label {
-	color: #fff;
-	font-size: 1.5rem;
-	font-weight: 650;
-	font-style: italic
+.commentContainer,.ratingContainer,.titleContainer {
+    padding: 20px;
+    font-size: 2rem
 }
 
-.commentContainer,
-.titleContainer {
-	padding: 50px;
-	margin: auto
+.ratingContainer {
+    margin: auto
 }
 
-.comment,
+.ratingContainer label {
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: 700
+}
+
+.ratingContainer #rating {
+    padding: 5px
+}
+
+.comment,.title {
+    padding: 40px;
+    margin: 20px auto;
+    border-radius: 10%
+}
+
 .title {
-	padding: 40px;
-	margin: 20px 10px;
-	border-radius: 10%
-}
-
-.title {
-	padding: 20px
+    padding: 25px
 }
 
 .submitComment {
-	border: 1px solid rgba(14, 7, 7, .53);
-	background-color: rgba(38, 176, 52, .3);
-	color: #fff;
-	padding: 5px 10px;
-	font-size: 2rem
+    border: 1px solid rgba(14,7,7,.53);
+    background-color: rgba(38,176,52,.3);
+    color: #fff;
+    padding: 20px;
+    font-size: 2.4rem;
+    cursor: pointer;
+    margin: 20px auto
 }
 
 .submitComment:hover {
-	background-color: #4caf50;
-	box-shadow: 0 0 10px #4caf50
+    background-color: #4caf50;
+    box-shadow: 0 0 10px #4caf50
 }
 
 .itemDetails .description {
-	padding: 10px;
-	font-size: 1.5rem;
-	text-align: left
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: left
 }
 
 .itemDetails img {
-	width: 100%;
-	height: auto
+    width: 100%;
+    height: auto
 }
 
 #productDetails {
-	border: solid #c7cbda 1px;
-	margin: 35px auto;
-	flex: 0 0 calc(33.33% - 30px);
-	background-color: rgba(199, 203, 218, .1);
-	min-width: 250px
+    border: solid #c7cbda 1px;
+    margin: 35px auto;
+    flex: 0 0 calc(33.33% - 30px);
+    background-color: rgba(199,203,218,.1);
+    min-width: 250px
 }
 
 .itemDetails .button {
-	margin-bottom: 15px;
-	padding: 4px 8px;
-	font-size: 1.3rem;
-	font-weight: 700
+    margin-bottom: 15px;
+    padding: 4px 8px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer
+}
+
+.buttonBuy {
+    cursor: pointer
+}
+
+@media only screen and (max-width:768px) {
+    .commentSection .commentForm {
+        flex-direction: column
+    }
+
+    .commentSection {
+        max-width: 400px
+    }
 }

@@ -1,6 +1,6 @@
-<!--index.html-->
-
 <?php 
+
+session_start();
 
     $css = file_get_contents('css/main.css');
 
@@ -27,7 +27,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
-    <header class="header-main" id="header">
+    <header class="header-main">
         <div class="header-main-logo">
             <img src="png/Logo-Color.png" alt="logo Uni">
             <div class="header-main-name">Student Shop</div>
@@ -37,20 +37,18 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="products.php">Products</a></li>
                 <li><a href="cart.php">Cart</a></li>
-                <li><a href="signup.php">Sign Up</a></li>
+                <?php if(isset($_SESSION["logged-in"]) && $_SESSION["logged-in"] == true) echo '<li><a href="logout.php">Logout</a></li>'; else echo '<li><a href="signup.php">Sign up</a></li>'; ?>
             </ul>
         </nav>
-        <div class="burger-menu-button">
-</div>
+        <div class="burger-menu-button"></div>
     </header>
 
-    <!--Burger menu-->
     <nav class="burger-menu">
         <ul>
             <li><a href="index.php">Home</a></li>
             <li><a href="products.php">Products</a></li>
             <li><a href="cart.php">Cart</a></li>
-            <li><a href="signup.php">Sign Up</a></li>
+            <?php if(isset($_SESSION["logged-in"]) && $_SESSION["logged-in"] == true) echo '<li><a href="logout.php">Logout</a></li>'; else echo '<li><a href="signup.php">Sign up</a></li>'; ?>
         </ul>
     </nav>
 
@@ -73,7 +71,8 @@
 
                 echo "<div class='indexOffers'>";
             
-                echo $row["offer_title"] . "<br>";
+                echo "<div style='font-size: 2rem; font-weight: lighter'>" . $row["offer_title"] . "</div>";
+				echo "<br>";
                 
                
                 echo $row["offer_dec"] . "<br>";
